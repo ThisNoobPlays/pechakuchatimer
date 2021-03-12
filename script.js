@@ -9,7 +9,7 @@ async function start() {
     let timer = document.getElementById("timer");
     console.log(paragraphs.length);
     for (let p of paragraphs) {
-        let time = 18.7;
+        let time = 19;
         paragraph.innerHTML = p;
         while (time > 0) {
             timer.innerHTML = time.toPrecision(4);
