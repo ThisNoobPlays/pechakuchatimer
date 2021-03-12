@@ -9,12 +9,12 @@ async function start() {
     let timer = document.getElementById("timer");
     console.log(paragraphs.length);
     for (let p of paragraphs) {
-        let time = 19;
+        let time = 20;
         paragraph.innerHTML = p;
         while (time > 0) {
-            timer.innerHTML = time.toPrecision(4);
-            time -= 0.1;
-            await sleep(100);
+            timer.innerHTML = time.toPrecision(2);
+            time -= 1;
+            await sleep(1000);
         }
     }
 }
