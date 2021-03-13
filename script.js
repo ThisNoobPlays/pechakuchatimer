@@ -8,6 +8,7 @@ async function start() {
     let paragraph = document.getElementById("paragraph");
     let timer = document.getElementById("timer");
     console.log(paragraphs.length);
+    await sleep(1000);
     for (let p of paragraphs) {
         let time = 20;
         paragraph.innerHTML = p;
